@@ -61,7 +61,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .refreshTokenValiditySeconds(60*60*24*60) // 刷新令牌有效时长,默认是30天
             ;*/
         // jdbc管理客户端
-        // jdbc管理客户端
         clients.withClientDetails(jdbcClientDetailsService());
 
     }
